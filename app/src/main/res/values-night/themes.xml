@@ -1,0 +1,12 @@
+<resources>
+    <style name="AppTheme.Dark" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/top_bar</item>
+        <item name="colorPrimaryVariant">@color/top_bar</item>
+        <item name="colorOnPrimary">@color/button_text</item>
+        <item name="colorSecondary">@color/button_background</item>
+        <item name="colorSecondaryVariant">@color/button_background</item>
+        <item name="colorOnSecondary">@color/button_text</item>
+        <item name="android:windowBackground">@color/app_background</item>
+        <item name="android:textColor">@color/text_color</item>
+    </style>
+</resources>

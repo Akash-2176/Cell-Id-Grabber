@@ -1,0 +1,111 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- Top Bar for Title -->
+    <TextView
+        android:id="@+id/topBarTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="16dp"
+        android:text="@string/namakkal_cyber_tool_cell_id_grabber"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:background="@color/title_background"
+        android:textColor="@color/button_text" />
+
+    <!-- TextView for displaying messages -->
+    <TextView
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:textSize="16sp"
+        android:textColor="@color/text_color" />
+
+    <!-- Table Layout for displaying the cell tower data -->
+    <TableLayout
+        android:id="@+id/cellTowerTable"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:stretchColumns="1"
+        android:padding="16dp">
+
+        <!-- Header row -->
+        <TableRow tools:ignore="UselessParent">
+            <TextView android:text="@string/s_no" android:padding="8dp" android:textStyle="bold"/>
+            <TextView android:layout_width="192dp" android:padding="8dp" android:text="@string/mcc" android:textStyle="bold" />
+            <TextView android:text="@string/mnc" android:padding="8dp" android:textStyle="bold"/>
+            <TextView android:text="@string/lac" android:padding="8dp" android:textStyle="bold"/>
+            <TextView android:text="@string/cid" android:padding="8dp" android:textStyle="bold"/>
+        </TableRow>
+    </TableLayout>
+
+    <!-- Buttons Section -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingTop="16dp">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/startStopButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/start"
+            app:backgroundTint="@color/button_background"
+        app:iconGravity="textStart" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/clearButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/clear"
+            app:backgroundTint="@color/button_background" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/saveButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/save"
+            app:backgroundTint="@color/button_background" />
+    </LinearLayout>
+
+    <!-- Bottom Bar for Branding -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:background="#F0F0F0">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/developed_by_ak"
+            android:textSize="14sp"
+            android:textStyle="italic"
+            android:textColor="#000000" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/contact_7305594291"
+            android:textSize="14sp"
+            android:textColor="#000000" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/email_akashthewarrior2176_gmail_com"
+            android:textSize="14sp"
+            android:textColor="#000000" />
+    </LinearLayout>
+</LinearLayout>

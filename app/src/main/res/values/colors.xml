@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="app_background">#FFFFFF</color> <!-- White -->
+    <color name="top_bar">#0000AF</color> <!-- Purple -->
+    <color name="title_background">#3700e1</color> <!-- Blue -->
+    <color name="button_background">#3700e1</color> <!-- Purple -->
+    <color name="button_text">#FFFFFF</color> <!-- White -->
+    <color name="text_color">#000000</color> <!-- Black -->
+</resources>

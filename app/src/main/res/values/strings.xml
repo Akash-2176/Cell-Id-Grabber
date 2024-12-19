@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">CellIdGrabber</string>
+    <string name="namakkal_cyber_tool_cell_id_grabber">NAMAKKAL CYBER TOOL - CELL ID GRABBER</string>
+    <string name="cell_id_information_will_appear_here">Cell ID Information Will Appear Here</string>
+    <string name="developed_by_ak">Developed by AK</string>
+    <string name="contact_7305594291">Contact: 7305594291</string>
+    <string name="email_akashthewarrior2176_gmail_com">Email: akashthewarrior2176@gmail.com</string>
+    <string name="cell_info">MCC: %1$s\nMNC: %2$s\nLAC: %3$d\nCID: %4$d</string>
+    <string name="permissions_denied">Permissions Denied. Unable to retrieve cell info.</string>
+    <string name="no_cell_info">No Cell Info Available</string>
+    <string name="error_retrieving">Error: Unable to retrieve cell info due to permissions.</string>
+    <string name="s_no">S.No</string>
+    <string name="mcc">MCC</string>
+    <string name="lac">LAC</string>
+    <string name="cid">CID</string>
+    <string name="save">Save</string>
+    <string name="pause">Pause</string>
+    <string name="start">Start</string>
+    <string name="mnc">MNC</string>
+    <string name="stop">Stop</string>
+    <string name="resume">Resume</string>
+    <string name="error_permission_denied">Error-Permission Denied</string>
+    <string name="clear">Clear</string>
+    <string name="refresh">refresh</string>
+</resources>
