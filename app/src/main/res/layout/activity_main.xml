@@ -33,16 +33,54 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:stretchColumns="1"
         android:padding="16dp">
 
         <!-- Header row -->
-        <TableRow tools:ignore="UselessParent">
-            <TextView android:text="@string/s_no" android:padding="8dp" android:textStyle="bold"/>
-            <TextView android:layout_width="192dp" android:padding="8dp" android:text="@string/mcc" android:textStyle="bold" />
-            <TextView android:text="@string/mnc" android:padding="8dp" android:textStyle="bold"/>
-            <TextView android:text="@string/lac" android:padding="8dp" android:textStyle="bold"/>
-            <TextView android:text="@string/cid" android:padding="8dp" android:textStyle="bold"/>
+        <TableRow android:background="@drawable/cell_border" tools:ignore="UselessParent">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/cell_border"
+                android:text="@string/s_no"
+                android:padding="8dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/cell_border"
+                android:padding="8dp"
+                android:text="@string/mcc"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/cell_border"
+                android:text="@string/mnc"
+                android:padding="8dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/cell_border"
+                android:text="@string/lac"
+                android:padding="8dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/cell_border"
+                android:text="@string/cid"
+                android:padding="8dp"
+                android:textStyle="bold" />
         </TableRow>
     </TableLayout>
 
@@ -59,14 +97,16 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/start"
+            android:layout_marginEnd="8dp"
             app:backgroundTint="@color/button_background"
-        app:iconGravity="textStart" />
+            app:iconGravity="textStart" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/clearButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/clear"
+            android:layout_marginEnd="8dp"
             app:backgroundTint="@color/button_background" />
 
         <com.google.android.material.button.MaterialButton
@@ -75,12 +115,14 @@
             android:layout_height="wrap_content"
             android:text="@string/save"
             app:backgroundTint="@color/button_background" />
+
     </LinearLayout>
 
     <!-- Bottom Bar for Branding -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
         android:gravity="center"
         android:orientation="vertical"
         android:padding="16dp"

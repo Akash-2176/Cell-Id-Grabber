@@ -217,14 +217,28 @@ class MainActivity : AppCompatActivity() {
         cellTowerTable.removeViews(1, cellTowerTable.childCount - 1) // Clear existing rows
         for ((index, tower) in cellTowerData.withIndex()) {
             val tableRow = TableRow(this)
-            tableRow.addView(TextView(this).apply { text = (index + 1).toString() })
-            tableRow.addView(TextView(this).apply { text = tower.mcc.toString() })
-            tableRow.addView(TextView(this).apply { text = tower.mnc.toString() })
-            tableRow.addView(TextView(this).apply { text = tower.lac.toString() })
-            tableRow.addView(TextView(this).apply { text = tower.cid.toString() })
+
+            // Function to create a consistent TextView
+            fun createCell(text: String): TextView {
+                return TextView(this).apply {
+                    this.text = text
+                    setBackgroundResource(R.drawable.cell_border)
+                    setPadding(8, 8, 8, 8)
+                    layoutParams = TableRow.LayoutParams(0, TableRow.LayoutParams.WRAP_CONTENT, 1f)
+                }
+            }
+
+            // Add cells to the row
+            tableRow.addView(createCell((index + 1).toString()))
+            tableRow.addView(createCell(tower.mcc.toString()))
+            tableRow.addView(createCell(tower.mnc.toString()))
+            tableRow.addView(createCell(tower.lac.toString()))
+            tableRow.addView(createCell(tower.cid.toString()))
+
             cellTowerTable.addView(tableRow)
         }
     }
+
 
     data class CellTower(val mcc: Int, val mnc: Int, val lac: Int, val cid: Int)
 }
