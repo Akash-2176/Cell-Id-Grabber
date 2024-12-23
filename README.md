@@ -23,9 +23,9 @@
 
 | Feature                  | Screenshot |
 |--------------------------|------------|
-| **Main Screen**          |<img src="Home-Screen.jpeg" alt="Home Page Screenshot" width="240">|
-| **Table of Cell Towers** |<img src="Tower-List-Screen.jpeg" alt="Home Page Screenshot" width="240">|
-| **Save Confirmation**    |<img src="Save-Conformation.jpeg" alt="Home Page Screenshot" width="240">|
+| **Main Screen**          |<img src="demo/Home-Screen.jpeg" alt="Home Page Screenshot" width="240">|
+| **Table of Cell Towers** |<img src="demo/Tower-List-Screen.jpeg" alt="Home Page Screenshot" width="240">|
+| **Save Confirmation**    |<img src="demo/Save-Conformation.jpeg" alt="Home Page Screenshot" width="240">|
 
 ---
 
