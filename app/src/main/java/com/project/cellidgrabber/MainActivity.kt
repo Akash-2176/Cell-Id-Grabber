@@ -110,6 +110,8 @@ class MainActivity : AppCompatActivity() {
     private fun clearData() {
         cellTowerData.clear()
         updateTable()
+        startStopButton.text = getString(R.string.start)
+        isCollectingData = false
         Log.d("ClearData", "Cell tower data cleared")
     }
 
